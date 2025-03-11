@@ -1,0 +1,12 @@
+{
+    "name": "demo-sonarcloud",
+    "version": "1.0.0",
+    "description": "Proyecto de ejemplo para integrar SonarCloud con GitHub Actions",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"No hay tests aún\""
+    },
+    "author": "Tu Nombre",
+    "license": "MIT"
+  }
+  
