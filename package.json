@@ -4,9 +4,9 @@
     "description": "Proyecto de ejemplo para integrar SonarCloud con GitHub Actions",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"No hay tests aún\""
+        "build": "echo 'No build step definido'",
+        "test": "echo \"No hay tests aún\""
     },
-    "author": "Tu Nombre",
+    "author": "eredar87",
     "license": "MIT"
-  }
-  
+}
