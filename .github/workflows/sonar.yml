@@ -19,9 +19,17 @@ jobs:
       #  uses: actions/setup-java@v3
       #  with:
       #    java-version: '11'
+       - name: Debug Sonar env
+         run: |
+         echo "SONAR_HOST_URL=$SONAR_HOST_URL"
+         echo "SONAR_TOKEN length=${#SONAR_TOKEN}"
+       env:
+         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+         SONAR_TOKEN:    ${{ secrets.SONAR_TOKEN }}
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
+
         env:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
           SONAR_TOKEN:    ${{ secrets.SONAR_TOKEN }}
